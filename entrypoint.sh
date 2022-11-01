@@ -4,7 +4,7 @@ set -u
 
 function main() {
 
-    if [ "${INPUT_WORKSPACE}" != "" ]; then
+    if [ "${INPUT_WORKSPACE}" == "" ]; then
         echo "Workspace dir cannot be empty"
         exit 1
     fi
