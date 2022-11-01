@@ -1,0 +1,17 @@
+name: 'Static GitHub Actions'
+branding:
+  icon: 'terminal'
+  color: 'orange'
+inputs:
+  workspace:
+    description: 'Relative path to place the content'
+    required: true
+  bucket:
+    description: 'S3 Bucket'
+    required: true
+  distribution:
+    description: 'Cloudfront Distribution'
+    required: true
+runs:
+  using: 'docker'
+  image: './Dockerfile'
